@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MapsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_bottom_fragment">Hello from bottom fragment\n</string>
+    <string name="hello_top_fragment">Hello from top fragment</string>
+    <string name="place_name_info">Paikan nimi</string>
+    <string name="latitude_from_map_click">Leveysaste (lat)</string>
+    <string name="longitude_from_map_click">Pituusaste (lon)</string>
+    <string name="tallenna">Tallenna</string>
+    <string name="etsi">Etsi</string>
+    <string name="poista">Poista</string>
+</resources>
