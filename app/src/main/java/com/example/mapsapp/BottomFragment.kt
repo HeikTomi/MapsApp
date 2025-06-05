@@ -207,18 +207,18 @@ class BottomFragment : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param paramLat Parameter 1.
-         * @param paramLong Parameter 2.
-         * @param paramTitle Parameter 3.
+         * @param paramTitle The marker title.
+         * @param paramLat Latitude.
+         * @param paramLong Longitude.
          * @return A new instance of fragment BottomFragment.
          */
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(paramTitle: String, paramLat: Double, paramLong: Double) =
             BottomFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM_TITLE, param1)
-                    putDouble(ARG_PARAM_LAT, param2.toDoubleOrNull() ?: 0.0)
-                    putDouble(ARG_PARAM_LONG, param2.toDoubleOrNull() ?: 0.0)
+                    putString(ARG_PARAM_TITLE, paramTitle)
+                    putDouble(ARG_PARAM_LAT, paramLat)
+                    putDouble(ARG_PARAM_LONG, paramLong)
                 }
             }
     }

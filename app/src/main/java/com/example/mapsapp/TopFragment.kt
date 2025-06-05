@@ -13,7 +13,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import kotlin.getValue
-import kotlin.toString
 
 private const val ARG_PARAM_LAT = "paramLat"
 private const val ARG_PARAM_LONG = "paramLong"
@@ -117,17 +116,18 @@ class TopFragment : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
+         * @param paramTitle The marker title.
+         * @param paramLat Latitude.
+         * @param paramLong Longitude.
          * @return A new instance of fragment TopFragment.
          */
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(paramTitle: String, paramLat: Double, paramLong: Double) =
             TopFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM_TITLE, paramTitle)
-                    putDouble(ARG_PARAM_LAT, paramLat ?: 0.0)
-                    putDouble(ARG_PARAM_LONG, paramLong ?: 0.0)
+                    putDouble(ARG_PARAM_LAT, paramLat)
+                    putDouble(ARG_PARAM_LONG, paramLong)
                 }
             }
     }

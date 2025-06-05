@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
     private val _location = MutableLiveData<Pair<Double, Double>>()
-    val location: LiveData<Pair<Double, Double>> = _location
-
     private val _title = MutableLiveData<String>()
+
+    val location: LiveData<Pair<Double, Double>> = _location
     val title: LiveData<String> = _title
 
     fun setLocation(lat: Double?, lon: Double?) {
